@@ -26,6 +26,11 @@ const TOOLS = [
     title: "Clay Shrinkage Calculators",
     description: "Pottery and ceramics: shrinkage percentage, predicted fired size, and target wet size.",
   },
+  {
+    href: "https://resin-mix-ratio-calculator.svc.julienika.cz",
+    title: "Resin Mix Ratio Calculators",
+    description: "Epoxy resin mix ratio, coverage ('how much do I need'), and a reference chart by brand.",
+  },
 ];
 
 export default function Home() {

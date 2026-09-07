@@ -12,6 +12,7 @@ const SITEMAPS = [
   "https://yarn.svc.julienika.cz/sitemap.xml",
   "https://sourdough.svc.julienika.cz/sitemap.xml",
   "https://clay-shrinkage-calculator.svc.julienika.cz/sitemap.xml",
+  "https://resin-mix-ratio-calculator.svc.julienika.cz/sitemap.xml",
 ];
 
 export async function GET() {
