@@ -5,8 +5,9 @@ Company-wide standards in `E:\CLAUDE\COMPANY\`.
 
 ## Current state
 
-Built and verified locally 2026-09-07 (lint, build, 2 Playwright e2e
-tests). Not yet deployed (M2).
+**Live at https://julienika.cz** (deployed 2026-09-07). Built, verified
+locally, and deployed the same day — see D3 for a real snag hit and
+resolved along the way.
 
 ## How things fit together
 
@@ -33,6 +34,21 @@ near zero.
 passive-income tool — no monetization angle beyond enabling AdSense
 verification for the whole domain family. Tracked as its own standalone
 Company project instead of added to `svc-lab`'s shipped-services table.
+
+**D3 — Deploy hit a pre-existing, disabled vhost config; stopped and
+asked rather than assume it was safe to overwrite.** `julai-new-vhost`
+refused with "already exists" — `/etc/nginx/sites-available/julienika.cz`
+turned out to be a real config from May 13 2026, shaped for a PHP/
+WordPress site (`root /var/www/julienika.cz/public`, PHP-FPM), not
+enabled (no `sites-enabled` symlink), and its referenced site directory
+no longer existed on disk. Rather than guess whether this represented
+real, recoverable prior work, stopped and asked the Owner directly —
+per the charter's instinct to investigate unfamiliar state before
+deleting or overwriting it. Owner confirmed it was dead and removed it
+themselves (deleting a root-owned file isn't within JulAI's sudo
+grants); the deploy then succeeded normally. Worth remembering: an
+"already exists" refusal from this script is a real signal something
+is there, not just a naming collision to route around.
 
 ## Next steps and open questions
 

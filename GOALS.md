@@ -24,11 +24,19 @@ Template/numbering conventions in `E:\CLAUDE\COMPANY\GOALS.md`.
 **Milestones:**
 - [x] M1 — Build: minimal Next.js links page + `ads.txt`, verified
       locally (build, lint, 2 Playwright e2e tests). ✔ 2026-09-07.
-- [ ] M2 — Deploy: git repo, push, clone to VPS, docker compose up on
-      port 30070, `julai-new-vhost julienika.cz 30070`, verify live
-      over HTTPS.
+- [x] M2 — Deploy: git repo, push, clone to VPS, docker compose up on
+      port 30070. Found a pre-existing, disabled, filesystem-empty
+      vhost config for `julienika.cz` (PHP/WordPress-shaped, dated
+      May 13) blocking `julai-new-vhost` — stopped and asked the Owner
+      rather than overwrite it; Owner confirmed it was dead and removed
+      it (`sudo rm`, since deleting a root-owned file isn't in JulAI's
+      sudo grants). Vhost + TLS then succeeded; verified live over
+      HTTPS at https://julienika.cz, `ads.txt` serving correctly, every
+      other host container's uptime unaffected. ✔ 2026-09-07.
 - [ ] M3 — Owner to confirm AdSense verification actually passed (JulAI
       can't see the AdSense dashboard).
 
 **Progress log** (newest first):
+- 2026-09-07 — M2 complete. Live at https://julienika.cz. See
+  HANDOVER.md D3 for the pre-existing-vhost incident.
 - 2026-09-07 — M1 complete, verified locally.
