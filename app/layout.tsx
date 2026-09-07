@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 const APP_URL = process.env.APP_URL ?? "http://localhost:3000";
 const SERVICE_NAME = "julienika.cz";
 const SERVICE_DESCRIPTION = "Free web tools and calculators.";
+const ADSENSE_PUBLISHER_ID = process.env.ADSENSE_PUBLISHER_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
@@ -36,7 +38,17 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        {ADSENSE_PUBLISHER_ID && (
+          <Script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
+      </body>
     </html>
   );
 }
