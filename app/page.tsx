@@ -21,6 +21,11 @@ const TOOLS = [
     title: "Sourdough Calculators",
     description: "Hydration, baker's-percentage recipe scaling, and starter feeding calculators.",
   },
+  {
+    href: "https://clay-shrinkage-calculator.svc.julienika.cz",
+    title: "Clay Shrinkage Calculators",
+    description: "Pottery and ceramics: shrinkage percentage, predicted fired size, and target wet size.",
+  },
 ];
 
 export default function Home() {
