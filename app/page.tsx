@@ -31,6 +31,11 @@ const TOOLS = [
     title: "Resin Mix Ratio Calculators",
     description: "Epoxy resin mix ratio, coverage ('how much do I need'), and a reference chart by brand.",
   },
+  {
+    href: "https://ics-calendar-generator.svc.julienika.cz",
+    title: "ICS Calendar File Generator",
+    description: "Single event add-to-calendar links, a recurring-event .ics builder, and a yearly birthday/anniversary reminder.",
+  },
 ];
 
 export default function Home() {
