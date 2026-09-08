@@ -41,6 +41,11 @@ const TOOLS = [
     title: "EPUB Metadata Fixer",
     description: "Check and fix an EPUB's title/author/identifier metadata, and check its cover image against KDP, Kobo, and Apple Books requirements.",
   },
+  {
+    href: "https://image-object-splitter.svc.julienika.cz",
+    title: "Image Object Splitter",
+    description: "Detect the distinct objects in a photo and export each as its own file, with optional background removal. Runs entirely in your browser.",
+  },
 ];
 
 export default function Home() {
