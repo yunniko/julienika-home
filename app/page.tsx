@@ -36,6 +36,11 @@ const TOOLS = [
     title: "ICS Calendar File Generator",
     description: "Single event add-to-calendar links, a recurring-event .ics builder, and a yearly birthday/anniversary reminder.",
   },
+  {
+    href: "https://epub-metadata-fixer.svc.julienika.cz",
+    title: "EPUB Metadata Fixer",
+    description: "Check and fix an EPUB's title/author/identifier metadata, and check its cover image against KDP, Kobo, and Apple Books requirements.",
+  },
 ];
 
 export default function Home() {

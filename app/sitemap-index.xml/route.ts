@@ -14,6 +14,7 @@ const SITEMAPS = [
   "https://clay-shrinkage-calculator.svc.julienika.cz/sitemap.xml",
   "https://resin-mix-ratio-calculator.svc.julienika.cz/sitemap.xml",
   "https://ics-calendar-generator.svc.julienika.cz/sitemap.xml",
+  "https://epub-metadata-fixer.svc.julienika.cz/sitemap.xml",
 ];
 
 export async function GET() {
