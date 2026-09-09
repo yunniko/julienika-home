@@ -51,6 +51,11 @@ const TOOLS = [
     title: "Pet Age Calculator",
     description: "Dog age calculator (size-adjusted), cat age calculator, and a life-stage reference chart.",
   },
+  {
+    href: "https://soap-lye-calculator.svc.julienika.cz",
+    title: "Soap Lye Calculator",
+    description: "Cold-process lye and water calculator, a water:lye ratio/concentration converter, and a sourced oil SAP value reference chart.",
+  },
 ];
 
 export default function Home() {

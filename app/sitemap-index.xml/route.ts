@@ -17,6 +17,7 @@ const SITEMAPS = [
   "https://epub-metadata-fixer.svc.julienika.cz/sitemap.xml",
   "https://image-object-splitter.svc.julienika.cz/sitemap.xml",
   "https://pet-age-calculator.svc.julienika.cz/sitemap.xml",
+  "https://soap-lye-calculator.svc.julienika.cz/sitemap.xml",
 ];
 
 export async function GET() {
