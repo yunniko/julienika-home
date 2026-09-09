@@ -56,6 +56,11 @@ const TOOLS = [
     title: "Soap Lye Calculator",
     description: "Cold-process lye and water calculator, a water:lye ratio/concentration converter, and a sourced oil SAP value reference chart.",
   },
+  {
+    href: "https://candle-fragrance-calculator.svc.julienika.cz",
+    title: "Candle Fragrance & Cost Calculators",
+    description: "Fragrance-oil load calculator by wax type, a sourced wax fragrance-load reference chart, and a per-candle cost calculator.",
+  },
 ];
 
 export default function Home() {
