@@ -46,6 +46,11 @@ const TOOLS = [
     title: "Image Object Splitter",
     description: "Detect the distinct objects in a photo and export each as its own file, with optional background removal. Runs entirely in your browser.",
   },
+  {
+    href: "https://pet-age-calculator.svc.julienika.cz",
+    title: "Pet Age Calculator",
+    description: "Dog age calculator (size-adjusted), cat age calculator, and a life-stage reference chart.",
+  },
 ];
 
 export default function Home() {
