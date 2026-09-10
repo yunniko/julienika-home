@@ -61,6 +61,11 @@ const TOOLS = [
     title: "Candle Fragrance & Cost Calculators",
     description: "Fragrance-oil load calculator by wax type, a sourced wax fragrance-load reference chart, and a per-candle cost calculator.",
   },
+  {
+    href: "https://ad-revenue-calculator.svc.julienika.cz",
+    title: "Ad Revenue & CPM Calculators",
+    description: "Ad revenue estimator, a CPM ↔ RPM converter, and directional CPM benchmark ranges by content niche and traffic geography.",
+  },
 ];
 
 export default function Home() {

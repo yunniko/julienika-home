@@ -19,6 +19,7 @@ const SITEMAPS = [
   "https://pet-age-calculator.svc.julienika.cz/sitemap.xml",
   "https://soap-lye-calculator.svc.julienika.cz/sitemap.xml",
   "https://candle-fragrance-calculator.svc.julienika.cz/sitemap.xml",
+  "https://ad-revenue-calculator.svc.julienika.cz/sitemap.xml",
 ];
 
 export async function GET() {
