@@ -66,6 +66,11 @@ const TOOLS = [
     title: "Ad Revenue & CPM Calculators",
     description: "Ad revenue estimator, a CPM ↔ RPM converter, and directional CPM benchmark ranges by content niche and traffic geography.",
   },
+  {
+    href: "https://aquarium-stocking-calculator.svc.julienika.cz",
+    title: "Aquarium Stocking Calculator",
+    description: "Species-aware freshwater stocking/bioload calculator, a tank volume calculator, and a sourced fish species reference chart.",
+  },
 ];
 
 export default function Home() {
