@@ -71,6 +71,11 @@ const TOOLS = [
     title: "Aquarium Stocking Calculator",
     description: "Species-aware freshwater stocking/bioload calculator, a tank volume calculator, and a sourced fish species reference chart.",
   },
+  {
+    href: "https://hydroponic-nutrient-calculator.svc.julienika.cz",
+    title: "Hydroponic Nutrient Calculator",
+    description: "EC/PPM meter-scale converter, a baseline-corrected nutrient dosing and dilution calculator, and a sourced per-crop EC/pH reference chart.",
+  },
 ];
 
 export default function Home() {
