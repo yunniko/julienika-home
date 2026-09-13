@@ -76,6 +76,11 @@ const TOOLS = [
     title: "Hydroponic Nutrient Calculator",
     description: "EC/PPM meter-scale converter, a baseline-corrected nutrient dosing and dilution calculator, and a sourced per-crop EC/pH reference chart.",
   },
+  {
+    href: "https://photo-metadata-cleaner.svc.julienika.cz",
+    title: "Photo Metadata Cleaner",
+    description: "See the EXIF and GPS metadata hidden in a photo, then remove it via canvas re-encode. Runs entirely in your browser.",
+  },
 ];
 
 export default function Home() {
