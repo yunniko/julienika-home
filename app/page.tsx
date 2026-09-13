@@ -81,6 +81,11 @@ const TOOLS = [
     title: "Photo Metadata Cleaner",
     description: "See the EXIF and GPS metadata hidden in a photo, then remove it via canvas re-encode. Runs entirely in your browser.",
   },
+  {
+    href: "https://structured-data-checker.svc.julienika.cz",
+    title: "Structured Data Checker",
+    description: "Check JSON-LD structured data against Google's current rich-result rules, find the right schema.org type for your page, and see a sourced reference chart.",
+  },
 ];
 
 export default function Home() {

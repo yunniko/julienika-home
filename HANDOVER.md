@@ -1,59 +1,43 @@
 # Handover — julienika-home
+Last verified: 2026-09-12 at 18d5e7a
 
-Read this before touching the project. Goal in `GOALS.md` (G-001).
-Company-wide standards in `E:\CLAUDE\COMPANY\`.
+Minimal links + `ads.txt` page for the bare apex domain. Goal: `GOALS.md` G-001. Charter:
+`E:\CLAUDE\COMPANY\`.
 
 ## Current state
 
-**Live at https://julienika.cz** (deployed 2026-09-07). Built, verified
-locally, and deployed the same day — see D3 for a real snag hit and
-resolved along the way.
+- **Live** at https://julienika.cz (deployed 2026-09-07, port 30070; HTTP 200 re-checked
+  2026-09-12). Redeployed whenever a svc-lab service ships (hub card + sitemap index).
+- One static page (`app/page.tsx`), `public/ads.txt`, no `lib/`, no tests beyond e2e.
+- Verification on 2026-09-12: `npm run test:unit` **fails** — `vitest.config.ts` has no
+  `include` filter, so it picks up `tests/e2e/home.spec.ts` (Playwright) and errors with
+  "Playwright Test did not expect test() to be called here". Not a product bug; fix by adding
+  `include: ["tests/unit/**/*.spec.ts"]` or removing the script. e2e not re-run this session.
+- Git tree clean.
 
 ## How things fit together
 
-Deliberately minimal — one static links page (`app/page.tsx`), no
-`lib/` (no business logic to unit-test), `public/ads.txt` for AdSense.
-Copied from the `svc-lab/template/` starter like every other portfolio
-service, minus the parts that don't apply (no calculator, so no `lib/`;
-kept the e2e layer since even a links page can silently break).
+Copied from `svc-lab/template/` minus the calculator parts. The hub page lists every live
+svc-lab service and the site serves a sitemap index (`/sitemap-index.xml`) pointing at each
+service's own sitemap.
 
-## Decision record
+## Rules in force
 
-**D1 — Exists only because of a real, immediate need, not planned
-scope creep.** The Owner's AdSense verification screen showed
-`julienika.cz` (the bare apex) as the site to verify, but that domain
-had no site at all — DNS already pointed at the VPS (a pre-existing A
-record, confirmed via `nslookup`), just nothing was listening on it.
-Rather than leave it unresolved or build something bigger than asked,
-the Owner explicitly said (chat, 2026-09-07) to "serve just txt for
-it" — this project is exactly that, plus a genuinely useful links page
-instead of a truly blank placeholder, since the cost of adding one was
-near zero.
-
-**D2 — Not registered as a `svc-lab` idea/service.** It's not a
-passive-income tool — no monetization angle beyond enabling AdSense
-verification for the whole domain family. Tracked as its own standalone
-Company project instead of added to `svc-lab`'s shipped-services table.
-
-**D3 — Deploy hit a pre-existing, disabled vhost config; stopped and
-asked rather than assume it was safe to overwrite.** `julai-new-vhost`
-refused with "already exists" — `/etc/nginx/sites-available/julienika.cz`
-turned out to be a real config from May 13 2026, shaped for a PHP/
-WordPress site (`root /var/www/julienika.cz/public`, PHP-FPM), not
-enabled (no `sites-enabled` symlink), and its referenced site directory
-no longer existed on disk. Rather than guess whether this represented
-real, recoverable prior work, stopped and asked the Owner directly —
-per the charter's instinct to investigate unfamiliar state before
-deleting or overwriting it. Owner confirmed it was dead and removed it
-themselves (deleting a root-owned file isn't within JulAI's sudo
-grants); the deploy then succeeded normally. Worth remembering: an
-"already exists" refusal from this script is a real signal something
-is there, not just a naming collision to route around.
+- Keep it minimal; adding scope (www, a brand page) needs an Owner ask (D001).
+- `npm ci --legacy-peer-deps`.
 
 ## Next steps and open questions
 
-- Deploy (M2): same pattern as every `svc-lab` service — port 30070,
-  `julai-new-vhost julienika.cz 30070`.
-- If the Owner later wants `www.julienika.cz` too, or a fuller
-  brand/portfolio page here, that's a scope change to ask about first
-  rather than assume.
+- Fix the vitest config so `npm run test:unit` is meaningful or absent.
+- Add the hydroponic-nutrient-calculator card once its vhost is fixed.
+
+## Deploy log
+
+| Date | Commit | What changed | Verified how |
+|---|---|---|---|
+| 2026-09-07 | — | First deploy after the Owner removed a dead vhost (D003) | Live over HTTPS |
+| 2026-09-08 → 2026-09-10 | 18d5e7a | Hub cards + sitemap index for services #6–#13 | curl of the hub and sitemap index after each ship |
+
+## Decisions
+
+`docs/decisions/README.md` (D001–D003).

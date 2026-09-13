@@ -23,6 +23,7 @@ const SITEMAPS = [
   "https://aquarium-stocking-calculator.svc.julienika.cz/sitemap.xml",
   "https://hydroponic-nutrient-calculator.svc.julienika.cz/sitemap.xml",
   "https://photo-metadata-cleaner.svc.julienika.cz/sitemap.xml",
+  "https://structured-data-checker.svc.julienika.cz/sitemap.xml",
 ];
 
 export async function GET() {
