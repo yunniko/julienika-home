@@ -91,6 +91,11 @@ const TOOLS = [
     title: "ATS Resume Checker",
     description: "Check a .docx or .pdf resume for common ATS parsing problems, find job-description keyword gaps, and see sourced ATS formatting rules — entirely in your browser.",
   },
+  {
+    href: "https://natural-dye-mordant-calculator.svc.julienika.cz",
+    title: "Natural Dye Mordant Calculator",
+    description: "Alum and tannin mordant calculators by weight of fiber (WOF) for protein and cellulose fibers, an iron-modifier calculator with safety guidance, and a sourced reference chart.",
+  },
 ];
 
 export default function Home() {
