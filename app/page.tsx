@@ -86,6 +86,11 @@ const TOOLS = [
     title: "Structured Data Checker",
     description: "Check JSON-LD structured data against Google's current rich-result rules, find the right schema.org type for your page, and see a sourced reference chart.",
   },
+  {
+    href: "https://ats-resume-checker.svc.julienika.cz",
+    title: "ATS Resume Checker",
+    description: "Check a .docx or .pdf resume for common ATS parsing problems, find job-description keyword gaps, and see sourced ATS formatting rules — entirely in your browser.",
+  },
 ];
 
 export default function Home() {
