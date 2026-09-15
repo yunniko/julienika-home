@@ -28,6 +28,7 @@ const SITEMAPS = [
   "https://natural-dye-mordant-calculator.svc.julienika.cz/sitemap.xml",
   "https://handmade-label-checker.svc.julienika.cz/sitemap.xml",
   "https://care-card-generator.svc.julienika.cz/sitemap.xml",
+  "https://weaving-yardage-calculator.svc.julienika.cz/sitemap.xml",
 ];
 
 export async function GET() {

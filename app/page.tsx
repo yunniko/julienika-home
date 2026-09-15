@@ -106,6 +106,11 @@ const TOOLS = [
     title: "Care Card Generator",
     description: "Free, instant, printable candle and soap care & safety cards, sourced from National Candle Association and soap-safety guidance. No signup.",
   },
+  {
+    href: "https://weaving-yardage-calculator.svc.julienika.cz",
+    title: "Weaving Yardage Calculator",
+    description: "Warp & weft yarn yardage calculator, WPI-to-sett estimator, and a sourced reed/dent reference chart for rigid-heddle and floor-loom weaving.",
+  },
 ];
 
 export default function Home() {
