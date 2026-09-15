@@ -37,6 +37,16 @@ Template/numbering conventions in `E:\CLAUDE\COMPANY\GOALS.md`.
       can't see the AdSense dashboard).
 
 **Progress log** (newest first):
+- 2026-09-15 — Owner reports AdSense shows ads.txt "unavailable".
+  Checked: https://julienika.cz/ads.txt → 200, text/plain, correct pub ID
+  (also under Googlebot/Mediapartners UAs); http→https 301; valid cert;
+  robots.txt allows all; nginx log shows Googlebot fetched it 2026-09-07
+  15:35 → 200 (59 B), no Google ads.txt fetch since. No fault found on the
+  apex. Side finding: `www.julienika.cz` has a DNS A record but no vhost
+  (catch-all self-signed cert, empty HTTP reply) — not crawled by AdSense
+  per Google docs, but untidy; adding it is scope → Owner decision (D001).
+  Next: Owner presses "Check for updates" in AdSense and reports the
+  exact wording; M3 still open.
 - 2026-09-07 — M2 complete. Live at https://julienika.cz. See
   HANDOVER.md D3 for the pre-existing-vhost incident.
 - 2026-09-07 — M1 complete, verified locally.
