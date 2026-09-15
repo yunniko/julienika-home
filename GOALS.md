@@ -37,6 +37,17 @@ Template/numbering conventions in `E:\CLAUDE\COMPANY\GOALS.md`.
       can't see the AdSense dashboard).
 
 **Progress log** (newest first):
+- 2026-09-15 (later) — Owner clarified: status is "Not found", was
+  "Authorized" before. Google docs: entries purge only on a re-crawl 404.
+  Checked: nginx logs for julienika.cz cover 09-07..09-15 continuously,
+  Googlebot visits daily, but no Google `/ads.txt` request since 09-07
+  (that one → 200); no Google ads.txt request with a non-200 on any
+  readable `*.julienika.cz` vhost log; all 19 ads.txt (apex + 18 svc) →
+  200 with the correct line; all 3 Contabo NS agree (A 62.171.183.241 for
+  apex + www, no AAAA), no DNSSEC. Not observable: `www.julienika.cz`
+  (catch-all, TLS fails, unlogged). No server-side cause found.
+  Next: Owner clicks "Check for updates" while JulAI watches logs to see
+  what the crawler actually requests; www vhost is an Owner decision (D001).
 - 2026-09-15 — Owner reports AdSense shows ads.txt "unavailable".
   Checked: https://julienika.cz/ads.txt → 200, text/plain, correct pub ID
   (also under Googlebot/Mediapartners UAs); http→https 301; valid cert;
