@@ -26,6 +26,7 @@ const SITEMAPS = [
   "https://structured-data-checker.svc.julienika.cz/sitemap.xml",
   "https://ats-resume-checker.svc.julienika.cz/sitemap.xml",
   "https://natural-dye-mordant-calculator.svc.julienika.cz/sitemap.xml",
+  "https://handmade-label-checker.svc.julienika.cz/sitemap.xml",
 ];
 
 export async function GET() {

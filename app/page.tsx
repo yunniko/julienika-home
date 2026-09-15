@@ -96,6 +96,11 @@ const TOOLS = [
     title: "Natural Dye Mordant Calculator",
     description: "Alum and tannin mordant calculators by weight of fiber (WOF) for protein and cellulose fibers, an iron-modifier calculator with safety guidance, and a sourced reference chart.",
   },
+  {
+    href: "https://handmade-label-checker.svc.julienika.cz",
+    title: "Handmade Label Checker",
+    description: "True-soap-vs-cosmetic classification and label checklists for handmade soap, cosmetic, and candle sellers, with sourced FDA/CPSC requirements.",
+  },
 ];
 
 export default function Home() {
