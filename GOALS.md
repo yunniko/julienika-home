@@ -37,6 +37,14 @@ Template/numbering conventions in `E:\CLAUDE\COMPANY\GOALS.md`.
       can't see the AdSense dashboard).
 
 **Progress log** (newest first):
+- 2026-09-15 — Owner: site is under AdSense review ("Getting ready"), so
+  "Check for updates" is disabled. Google: review takes a few days to 2–4
+  weeks; "Not found" = none found "when the AdSense crawler last crawled".
+  Apex page carries the AdSense script and ~400 visible words (a list of
+  tool links, no content of its own); Google lists "not enough unique
+  content" as a rejection reason — a risk, not a confirmed cause.
+  BLOCKED: wait for review outcome; Owner decides on a `www.julienika.cz`
+  redirect vhost (D001 scope). Nothing to change server-side meanwhile.
 - 2026-09-15 12:23 — Watched apex + svc nginx logs 11:53–12:23 CEST: no
   Google request of any kind (ads.txt or otherwise) on the apex; only
   ads.txt hits were from the Owner's own IP. No Owner confirmation that
