@@ -101,6 +101,11 @@ const TOOLS = [
     title: "Handmade Label Checker",
     description: "True-soap-vs-cosmetic classification and label checklists for handmade soap, cosmetic, and candle sellers, with sourced FDA/CPSC requirements.",
   },
+  {
+    href: "https://care-card-generator.svc.julienika.cz",
+    title: "Care Card Generator",
+    description: "Free, instant, printable candle and soap care & safety cards, sourced from National Candle Association and soap-safety guidance. No signup.",
+  },
 ];
 
 export default function Home() {
