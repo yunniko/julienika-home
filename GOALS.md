@@ -37,6 +37,13 @@ Template/numbering conventions in `E:\CLAUDE\COMPANY\GOALS.md`.
       can't see the AdSense dashboard).
 
 **Progress log** (newest first):
+- 2026-09-15 12:23 — Watched apex + svc nginx logs 11:53–12:23 CEST: no
+  Google request of any kind (ads.txt or otherwise) on the apex; only
+  ads.txt hits were from the Owner's own IP. No Owner confirmation that
+  "Check for updates" was clicked in that window, so the crawler's
+  behavior is still unobserved. BLOCKED: Owner to say whether they clicked
+  it (and whether status changed) and decide on a `www.julienika.cz` →
+  apex redirect vhost (D001 scope).
 - 2026-09-15 (later) — Owner clarified: status is "Not found", was
   "Authorized" before. Google docs: entries purge only on a re-crawl 404.
   Checked: nginx logs for julienika.cz cover 09-07..09-15 continuously,
