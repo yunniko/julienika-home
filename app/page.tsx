@@ -111,6 +111,11 @@ const TOOLS = [
     title: "Weaving Yardage Calculator",
     description: "Warp & weft yarn yardage calculator, WPI-to-sett estimator, and a sourced reed/dent reference chart for rigid-heddle and floor-loom weaving.",
   },
+  {
+    href: "https://woodturning-blank-calculator.svc.julienika.cz",
+    title: "Woodturning Blank Calculator",
+    description: "Log-to-bowl-blank yield calculator, a twice-turning rough-out wall-thickness & drying-time estimator, and a sourced 14-species reference chart for woodturners.",
+  },
 ];
 
 export default function Home() {
