@@ -116,6 +116,11 @@ const TOOLS = [
     title: "Woodturning Blank Calculator",
     description: "Log-to-bowl-blank yield calculator, a twice-turning rough-out wall-thickness & drying-time estimator, and a sourced 14-species reference chart for woodturners.",
   },
+  {
+    href: "https://knife-steel-heat-treat-calculator.svc.julienika.cz",
+    title: "Knife Steel Heat Treat Calculator",
+    description: "Heat-treat schedule lookup for 1075, 1084, 1095, 15N20, 52100, 80CrV2, and O1, a forge/temper color-to-temperature guide, and a sourced blade steel reference chart for bladesmiths.",
+  },
 ];
 
 export default function Home() {

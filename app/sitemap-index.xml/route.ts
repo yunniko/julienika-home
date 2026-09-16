@@ -30,6 +30,7 @@ const SITEMAPS = [
   "https://care-card-generator.svc.julienika.cz/sitemap.xml",
   "https://weaving-yardage-calculator.svc.julienika.cz/sitemap.xml",
   "https://woodturning-blank-calculator.svc.julienika.cz/sitemap.xml",
+  "https://knife-steel-heat-treat-calculator.svc.julienika.cz/sitemap.xml",
 ];
 
 export async function GET() {
