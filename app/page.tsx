@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { GUIDES, guideSlugs } from "@/lib/guides";
+
+const APP_URL = process.env.APP_URL ?? "http://localhost:3000";
 
 export const metadata: Metadata = {
-  title: "julienika.cz",
-  description: "Free web tools and calculators.",
+  title: "julienika.cz — guides and calculators for makers",
+  description:
+    "Reference guides on the calculations behind baking, soap making, ceramics, resin, aquariums and photography, plus free browser-based calculators for each.",
+  alternates: { canonical: APP_URL },
 };
 
 const TOOLS = [
@@ -125,22 +131,62 @@ const TOOLS = [
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-2xl px-4 py-12">
-      <h1 className="text-3xl font-semibold">julienika.cz</h1>
-      <p className="mt-3 text-gray-600">Free web tools and calculators.</p>
+    <main className="mx-auto w-full max-w-3xl px-4 py-10">
+      <h1 className="text-3xl font-semibold">Guides and calculators for people who make things</h1>
+      <p className="mt-4 text-gray-700">
+        Most crafts run on a handful of numbers. A dough is defined by its hydration, a bar
+        of soap by the ratio of lye to fat, a thrown pot by how much the clay will shrink on
+        the way to the kiln door. Get those wrong and the work fails in ways that are
+        obvious afterwards and invisible at the time.
+      </p>
+      <p className="mt-4 text-gray-700">
+        This site explains those calculations and gives you tools to run them. The guides
+        below are written to be read on their own — they explain the principle well enough
+        that you could do the arithmetic on paper. The calculators are free, need no
+        account, and several of them work entirely inside your browser, so the files you
+        open never leave your computer.
+      </p>
 
-      <div className="mt-8 grid gap-4 sm:grid-cols-2">
-        {TOOLS.map((tool) => (
-          <a
-            key={tool.href}
-            href={tool.href}
-            className="rounded-lg border border-gray-200 p-5 hover:border-gray-400"
-          >
-            <h2 className="font-semibold text-blue-700">{tool.title}</h2>
-            <p className="mt-1 text-sm text-gray-600">{tool.description}</p>
-          </a>
-        ))}
-      </div>
+      <section className="mt-12">
+        <div className="flex items-baseline justify-between gap-4">
+          <h2 className="text-2xl font-semibold">Guides</h2>
+          <Link href="/guides" className="text-sm text-blue-700 hover:underline">
+            All guides
+          </Link>
+        </div>
+        <ul className="mt-5 flex flex-col gap-5">
+          {guideSlugs().map((slug) => (
+            <li key={slug} className="rounded-lg border border-gray-200 p-6">
+              <Link
+                href={`/guides/${slug}`}
+                className="text-lg font-semibold text-blue-700 hover:underline"
+              >
+                {GUIDES[slug].title}
+              </Link>
+              <p className="mt-2 text-sm text-gray-600">{GUIDES[slug].description}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section id="tools" className="mt-14 scroll-mt-4">
+        <h2 className="text-2xl font-semibold">Tools</h2>
+        <p className="mt-3 text-gray-700">
+          Each tool lives on its own address and does one job. No signup, no limits.
+        </p>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          {TOOLS.map((tool) => (
+            <a
+              key={tool.href}
+              href={tool.href}
+              className="rounded-lg border border-gray-200 p-5 hover:border-gray-400"
+            >
+              <h3 className="font-semibold text-blue-700">{tool.title}</h3>
+              <p className="mt-1 text-sm text-gray-600">{tool.description}</p>
+            </a>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }

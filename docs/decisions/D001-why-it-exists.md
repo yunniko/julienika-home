@@ -1,5 +1,5 @@
 # D001 · Exists to give the bare apex domain an AdSense-verifiable site
-Date: 2026-09-07 · Goal: G-001 · Status: active
+Date: 2026-09-07 · Goal: G-001 · Status: superseded by D004 (2026-09-18)
 Context: AdSense verification named `julienika.cz`, which had DNS but nothing listening.
 Decision: Owner asked to "serve just txt for it"; shipped `ads.txt` plus a minimal links page at near-zero extra cost.
 Rejected: a fuller brand site (scope creep).

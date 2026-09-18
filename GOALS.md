@@ -33,10 +33,39 @@ Template/numbering conventions in `E:\CLAUDE\COMPANY\GOALS.md`.
       sudo grants). Vhost + TLS then succeeded; verified live over
       HTTPS at https://julienika.cz, `ads.txt` serving correctly, every
       other host container's uptime unaffected. ✔ 2026-09-07.
-- [ ] M3 — Owner to confirm AdSense verification actually passed (JulAI
-      can't see the AdSense dashboard).
+- [x] M3 — AdSense verification outcome established (2026-09-18, JulAI
+      read the dashboard directly — Owner granted Chrome access): ownership
+      verified and `ads.txt` **Разрешено/Authorized**, but the site review
+      **rejected** julienika.cz for "Бесполезный контент" (low value
+      content). Ads stay off until that is fixed and re-reviewed.
+- [ ] M4 — Build the apex into a real content site (D004): self-contained
+      reference guides in `content/guides/` rendered via markdown+`marked`
+      (listing-studio's pattern), About/Contact/Privacy pages, real
+      navigation, homepage led by content with tool cards demoted.
+      Domain-sensitive claims verified by the `domain-expert` agent first.
+- [ ] M5 — Verify and deploy: unit + e2e tests, lint, `docs-lint`, build,
+      redeploy to the VPS, confirm every page live over HTTPS and every
+      other site on the host unaffected.
+- [ ] M6 — Request the AdSense re-review from the dashboard and report the
+      outcome. Fix `www.julienika.cz` (no vhost → cert error) as part of
+      this, so a reviewer never lands on a broken host.
 
 **Progress log** (newest first):
+- 2026-09-18 — M4 built (not yet deployed). Owner directed autonomous
+  fix-and-ship, and granted AdSense console access; JulAI read the console
+  directly: one site (julienika.cz), ownership verified, `ads.txt`
+  **Authorized**, review **rejected** for "Бесполезный контент", with a
+  "Запросить проверку" control available once fixed. Built per D004: 6
+  guides (~1000–1400 words each) in `content/guides/`, About/Contact/Privacy
+  in `content/pages/`, `lib/guides.ts` + `components/article-page.tsx`
+  (listing-studio's markdown+`marked` pattern), guides index and `[slug]`
+  routes with CollectionPage/Article JSON-LD, header nav + footer, homepage
+  led by prose with the 23 tool cards demoted, sitemap covering every page.
+  Verified: lint clean, **9 unit tests pass** (vitest `include`+alias bug
+  fixed), **4 e2e pass**, build prerenders 16 routes, `docs-lint` ok.
+  Codex critique unavailable (account usage limit until 2026-09-19 15:13).
+  Next: apply the running `domain-expert` review, then deploy (M5), then
+  request the re-review and fix `www` (M6).
 - 2026-09-18 — AdSense review outcome: **rejected — "Бесполезный контент"**
   (low value content); Owner must fix and request a re-review. So the
   ads.txt "Not found" was downstream of the review, not a server fault
