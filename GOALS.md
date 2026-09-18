@@ -51,6 +51,25 @@ Template/numbering conventions in `E:\CLAUDE\COMPANY\GOALS.md`.
       this, so a reviewer never lands on a broken host.
 
 **Progress log** (newest first):
+- 2026-09-18 — M5 done, M6 partly done. `domain-expert` reviewed all six
+  guides; its safety findings were verified against primary sources before
+  acting (WEST SYSTEM sensitization figures, classicbells zap-vs-pH, NIOSH
+  NaOH first aid, Epoxyworks/TotalBoat amine blush). Fixed: soap pH-strip
+  advice replaced by the zap test (pH is the wrong observable), 9.5–11.5
+  range, first aid, container materials; epoxy PPE/sensitization section,
+  amine blush vs off-ratio ("scrape and redo" was wrong), MEKP as initiator.
+  Unsourced findings (M^0.75 scaling, PRNU, Windows recoverable-strings,
+  EPA per-pH figures) deliberately **not** published. Guides now 1123–1723
+  words each. Verified: lint, 9 unit + 4 e2e, build, docs-lint all pass.
+  Deployed (a284d82): all 8 live URLs 200, no other container restarted
+  (uptimes unchanged), 4 other sites still 200. `www.julienika.cz` vhost +
+  cert created via `julai-new-vhost` (D005) — was a cert error, now 200.
+  **BLOCKED: the AdSense re-review was NOT submitted.** The Chrome window
+  reports `Viewport: 0x0`, so clicks don't land; the confirmation checkbox
+  still reads unchecked and `resize_window` did not restore a viewport.
+  Owner: restore/un-minimize the Chrome window and say so — then JulAI ticks
+  "Я подтверждаю, что все нарушения устранены" and clicks "Запросить
+  проверку" (site detail page for julienika.cz), or the Owner can click it.
 - 2026-09-18 — M4 built (not yet deployed). Owner directed autonomous
   fix-and-ship, and granted AdSense console access; JulAI read the console
   directly: one site (julienika.cz), ownership verified, `ads.txt`

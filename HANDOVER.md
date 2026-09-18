@@ -1,18 +1,22 @@
 # Handover — julienika-home
 
-Last verified: 2026-09-18 at 1ced54e
+Last verified: 2026-09-18 at a284d82
 
 The site for the apex domain `julienika.cz`: reference guides, the trust pages, and a
 hub listing every live svc-lab tool. Goal: `GOALS.md` G-001. Charter: `E:\CLAUDE\COMPANY\`.
 
 ## Current state
 
-- **Live** at https://julienika.cz (port 30070). The content rebuild below is **built and
-  tested locally but not yet deployed** — the live site is still the old links-only page.
+- **Live** at https://julienika.cz and https://www.julienika.cz (both port 30070), content
+  rebuild deployed 2026-09-18 at a284d82 and verified: 8 URLs return 200, no other
+  container restarted, 4 other sites unaffected.
 - **AdSense rejected the site on 2026-09-18** for "Бесполезный контент" (low value
   content). Ownership is verified and `ads.txt` reads Authorized; the rejection is about
-  the site's content, not the file. Ads stay off until a re-review passes. JulAI can read
-  and act in the AdSense console directly (Owner granted Chrome access 2026-09-18).
+  the site's content, not the file. Ads stay off until a re-review passes.
+- **The re-review has NOT been requested yet.** JulAI has console access (Owner granted
+  it 2026-09-18) but the Chrome window reports `Viewport: 0x0`, so clicks do not land and
+  the confirmation checkbox stays unchecked; `resize_window` did not fix it. Needs the
+  window visibly restored, then the checkbox + "Запросить проверку" on the site detail page.
 - **Rebuilt as a content site (D004):** six guides in `content/guides/`, About/Contact/
   Privacy in `content/pages/`, header nav and footer, homepage led by prose with the 23
   tool cards demoted below it.
@@ -46,9 +50,12 @@ svc-lab service ships — that list, not the guides, is what the daily automatio
 
 ## Next steps and open questions
 
-- Apply the `domain-expert` findings to the six guides (review was running at handover).
-- Deploy, then request the AdSense re-review from the console and record the outcome.
-- Add the `www.julienika.cz` redirect vhost via `julai-new-vhost`.
+- **BLOCKED:** request the AdSense re-review once the Chrome window is usable, then record
+  the outcome. A re-review takes days to weeks.
+- If it is rejected again, get the exact reason before changing anything — a second blind
+  attempt costs another cycle.
+- `www` serves the same app rather than redirecting (D005); converting it to a real 301 is
+  an Owner-run nginx change if ever wanted.
 
 ## Deploy log
 
@@ -56,7 +63,8 @@ svc-lab service ships — that list, not the guides, is what the daily automatio
 |---|---|---|---|
 | 2026-09-07 | — | First deploy after the Owner removed a dead vhost (D003) | Live over HTTPS |
 | 2026-09-08 → 2026-09-17 | 3920b52 | Hub cards + sitemap index for services #6–#23 | curl of the hub and sitemap index after each ship |
+| 2026-09-18 | a284d82 | Content site: 6 guides, About/Contact/Privacy, nav, sitemap (D004); `www` vhost + cert (D005) | 8 URLs 200 incl. www; other containers' uptimes unchanged; 4 other sites 200 |
 
 ## Decisions
 
-`docs/decisions/README.md` (D001–D004; D001 superseded by D004).
+`docs/decisions/README.md` (D001–D005; D001 superseded by D004).
