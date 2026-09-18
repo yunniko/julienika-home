@@ -37,6 +37,19 @@ Template/numbering conventions in `E:\CLAUDE\COMPANY\GOALS.md`.
       can't see the AdSense dashboard).
 
 **Progress log** (newest first):
+- 2026-09-18 — AdSense review outcome: **rejected — "Бесполезный контент"**
+  (low value content); Owner must fix and request a re-review. So the
+  ads.txt "Not found" was downstream of the review, not a server fault
+  (file verified correct and 200 on 09-15). Google (answer/12170421):
+  subdomains can no longer be added or managed as separate sites, so every
+  `*.svc.julienika.cz` service sits under the julienika.cz site entry —
+  meaning apex approval likely gates AdSense for the whole svc-lab
+  portfolio on this domain (inference; Google docs don't state it outright).
+  Apex is ~400 visible words of link cards, no content of its own.
+  BLOCKED: Owner to choose — (a) give the apex real, original content and
+  re-request review (reverses D001's "keep it minimal"), (b) accept no
+  AdSense on julienika.cz, or (c) rehost the services under a domain that
+  has content. No server-side change until then.
 - 2026-09-15 — Owner: site is under AdSense review ("Getting ready"), so
   "Check for updates" is disabled. Google: review takes a few days to 2–4
   weeks; "Not found" = none found "when the AdSense crawler last crawled".
