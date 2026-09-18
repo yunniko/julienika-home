@@ -33,16 +33,27 @@ well past its intended range slumps and deforms: it is over-vitrified.
 
 ## Typical numbers, and why you should not trust them
 
-Total shrinkage, wet to fired, commonly lands somewhere around 10–14% for many
-stoneware and porcelain bodies, with earthenware often lower. Porcelains tend
-to sit at the high end and can exceed that range.
+Total shrinkage, wet to fired, commonly lands somewhere around 8–14% across
+common bodies. Porcelains tend to sit at the high end and can exceed it,
+grogged stonewares lower, and earthenware lower again.
 
 That spread is far too wide to size anything precisely. A 12% figure applied to
 a clay that actually shrinks 9% will leave a 300 mm platter about 10 mm off —
-enough to ruin a piece made to fit something. Manufacturers publish shrinkage
-for their bodies, and those figures are a reasonable starting point, but your
-result depends on your firing schedule, your kiln's real temperature, and how
+enough to ruin a piece made to fit something.
+
+Manufacturers publish shrinkage for their bodies, and those figures are a
+reasonable starting point — but **check which baseline they use before putting
+one into a formula.** Published figures are frequently *dry-to-fired*, measured
+from a bone-dry bar rather than a plastic one, which is why catalogue numbers
+often look much smaller than the totals above. Feeding a dry-basis figure into
+a wet-basis calculation will undersize your work. Your result also depends on
+your firing schedule, how much heatwork your kiln actually delivered, and how
 wet the clay was when you measured.
+
+Heatwork, rather than peak temperature alone, is the thing that matters: a slow
+firing does more work on the clay than a fast one that touches the same
+temperature briefly. That is precisely what pyrometric cones measure, and why
+potters talk in cones rather than degrees.
 
 ## Measuring your own shrinkage rate
 
@@ -78,14 +89,15 @@ The correct relation is:
 **Wet size = finished size ÷ (1 − shrinkage as a decimal)**
 
 For a 150 mm finished bowl in a clay that shrinks 12%: 150 ÷ 0.88 ≈ 170.5 mm.
-Making it 150 + 12% = 168 mm would leave you roughly 2.5 mm short — small, but
-exactly the kind of error that stops a lid from fitting.
+Making it 150 + 12% = 168 mm instead gives a fired piece of 168 × 0.88 ≈
+147.8 mm — 2.2 mm short of what you wanted. Small, but exactly the kind of
+error that stops a lid from fitting.
 
 The same formula applies to any linear dimension: height, diameter, the spacing
 between two features. It does not apply directly to volume or weight, which
 scale with the cube of the linear change. A piece that shrinks 12% linearly
-loses around 32% of its volume, which is why a mug thrown to hold 400 ml of
-water at the wet stage will hold noticeably less when fired.
+loses around 32% of its volume: a mug thrown to hold 400 ml at the wet stage
+holds roughly 270 ml once fired.
 
 ## Practical consequences worth planning for
 
@@ -97,7 +109,9 @@ water at the wet stage will hold noticeably less when fired.
   than its host and pulls itself off at the join.
 - **Flat pieces** shrink too, and they do it while sitting on a shelf that does
   not. Tiles and platters crack when friction fights the contraction, which is
-  why potters fire them on sand, grog or a wash rather than bare shelf.
+  why potters fire them on sand, grog or a wash rather than bare shelf. Treat
+  silica sand with the respect respirable crystalline silica deserves: clean it
+  up damp rather than sweeping it into the air.
 - **Repeat work** needs a recorded shrinkage figure per body. Write it on the
   bag; do not rediscover it each time.
 

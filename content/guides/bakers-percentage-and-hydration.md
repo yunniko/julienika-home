@@ -30,8 +30,9 @@ Hydration is water weight divided by flour weight, times 100. A dough with
 predictor of how the dough will behave:
 
 - **Around 60–65%** — a stiff dough that holds its shape, kneads easily and
-  stays where you put it. Typical of sandwich loaves, bagels and many enriched
-  doughs. The crumb tends to be even and fine.
+  stays where you put it. Typical of sandwich loaves and many enriched doughs.
+  The crumb tends to be even and fine. Bagel doughs are stiffer still, usually
+  somewhere in the 50s, which is where that dense chew comes from.
 - **Around 68–75%** — the range most rustic sourdough recipes live in. The
   dough is slack enough to need folds rather than heavy kneading, and open
   enough to give an irregular crumb.
@@ -81,11 +82,15 @@ starter 140 g.
 banneton takes a certain weight. Add all the percentages together to get the
 total as a proportion of flour. For 100 + 70 + 2 + 20, that total is 192%. Then
 divide the target dough weight by that figure to recover the flour weight. For
-a 900 g loaf: 900 ÷ 1.92 ≈ 469 g flour, and every other ingredient follows from
-its percentage.
+900 g of dough: 900 ÷ 1.92 ≈ 469 g flour, and every other ingredient follows
+from its percentage.
 
-Add a few percent for dough left behind on the bowl and hands if you need the
-finished weight to be exact.
+Note that this is *dough* weight, not the weight of the loaf that comes out.
+Bread loses moisture in the oven — commonly in the region of 10–15% of the
+dough weight, more for free-standing hearth loaves with a lot of crust, less in
+a covered tin — and a little more again as it cools. If you need a particular
+*baked* weight, scale the dough up to allow for it, and add a few percent on
+top for what stays behind on the bowl and your hands.
 
 ## Salt, and why 2% is the number you keep seeing
 
@@ -95,6 +100,10 @@ cutting it substantially changes the dough's timing and handling, not just the
 flavour. At 1000 g flour, 2% is 20 g — a figure worth weighing rather than
 estimating, because a teaspoon of coarse salt and a teaspoon of fine salt are
 quite different weights.
+
+The starter counts here too. Professional practice quotes salt against *total*
+flour, including the flour your starter brought with it: those 20 g are 2% of
+the recipe's 1000 g, but only 1.8% of the true 1100 g.
 
 ## Why weight, not volume
 

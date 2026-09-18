@@ -11,9 +11,23 @@ hydroxide and potassium hydroxide are caustic. They burn skin and eyes, and
 the reaction with water is strongly exothermic — the solution can reach near
 boiling within seconds and releases fumes worth avoiding. Always add lye to
 water, never water to lye, which would let the first contact boil violently and
-spit. Wear sealed goggles and gloves, work where there is airflow, and keep
-lye away from aluminium: the two react and release flammable hydrogen gas.
-Steel and heavy plastic are fine.
+spit. Wear sealed goggles and gloves, cover your arms and feet, and work where
+there is airflow and where children and pets are not. Take the same care
+weighing dry flakes as mixing the solution — the dust is caustic too.
+
+**Containers matter more than people expect.** Lye attacks aluminium, zinc and
+tin, releasing flammable hydrogen gas, so no aluminium pans, no galvanised or
+tin-plated steel, and no aluminium utensils. Use stainless steel, or heavy
+plastic that is specifically HDPE (recycling mark 2) or polypropylene (mark 5).
+Avoid glass: hot caustic solution etches it over time, and a weakened glass
+vessel full of near-boiling lye is a serious accident waiting to happen.
+
+**If it gets on you.** Flush the area immediately with plenty of running water
+and keep flushing — this is one where more water and more time is simply
+better. For eyes, irrigate immediately and get medical attention urgently. Do
+not try to neutralise a burn with vinegar or lemon juice: it is a folk remedy
+that adds an acid–base reaction, and its heat, to already injured skin. Water
+first, always. Keep the tap accessible before you start, not after.
 
 ## Saponification: what the lye is for
 
@@ -44,6 +58,11 @@ A further wrinkle for liquid soap: KOH is not normally sold pure. Technical
 grade is commonly around 90% pure, with the rest mostly water and carbonate,
 so recipes and calculators either assume a purity figure or ask you for one. If
 you use a 100% figure against 90% flakes, your soap will be under-alkalised.
+
+Correcting for it is one division: actual weight = ideal weight ÷ purity. If
+the calculation calls for 90 g of pure KOH and your flakes are 90% pure, you
+weigh out 100 g. Purity varies by supplier, roughly 85–95%, so it is worth
+knowing what you have rather than assuming.
 
 ## Superfat: deliberately leaving oil unreacted
 
@@ -97,10 +116,27 @@ Curing is mostly water evaporating: the bar becomes harder, milder and much
 longer-lasting in the shower. A bar used after a week is not usually dangerous
 if the recipe was correct — it is simply soft, and dissolves quickly.
 
-If you want to confirm a batch is safely saponified, pH testing is more
-reliable than the old "zap test" of touching the bar to your tongue. Finished
-soap is alkaline by nature — somewhere around pH 9–10 is normal — so the
-question is whether free alkali remains, not whether the bar is neutral.
+Confirming that a batch is safely saponified is where a lot of well-meant
+advice goes wrong. The intuitive move is to reach for pH strips, but they are
+the weaker test: soapmaking references describe strips and phenolphthalein as
+notoriously inaccurate on soap, and the industry's actual method for detecting
+excess alkali is a total alkalinity titration, not a pH reading.
+
+The reason is that pH is the wrong question. Finished soap is alkaline by
+nature — properly made, skin-safe soap ranges from roughly 9.5 to 11.5
+depending on the fatty acids in the recipe — so a high reading tells you almost
+nothing. What you actually want to know is whether *free, unreacted alkali*
+remains, and a soap slurry's pH is dominated by the soap itself.
+
+That is why the old "zap test" survives: touching a damp fingertip that has
+been swiped on the bar to your tongue detects free alkali as an unmistakable
+sensation like a nine-volt battery. Wait two or three days after making, since
+fresh soap zaps before saponification has finished, and **swipe with a finger —
+do not put the bar against your tongue**, which risks a chemical burn if the
+batch really is lye-heavy.
+
+A bar that zaps goes back to be rebatched or thrown away. A bar that does not,
+made from a correctly calculated recipe, is fine.
 
 ## Running the numbers
 

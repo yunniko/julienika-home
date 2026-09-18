@@ -9,9 +9,12 @@ travels with the file when you send it to someone.
 
 The dominant standard is **EXIF** (Exchangeable Image File Format), embedded in
 JPEG and TIFF files and mirrored by similar structures in raw formats. Two
-other standards often sit alongside it: **IPTC**, used by news and stock
-photography for captions, credits and rights, and **XMP**, Adobe's more modern
-and extensible container.
+other standards sit alongside it: **XMP**, an extensible container that began
+at Adobe but has been an ISO standard since 2012, and **IPTC**, the captions,
+credits and rights fields used by news and stock photography. The two are not
+really siblings — the current IPTC Photo Metadata Standard is implemented
+*using* XMP, with the older IIM format as legacy. That matters if you ever
+strip "the XMP": your copyright and credit fields are in there.
 
 Typical EXIF contents fall into a few groups:
 
@@ -56,11 +59,22 @@ re-encode usually discards metadata as a side effect. But the same platform may
 retain the original and the data in it on their servers, and stripping on
 display does nothing for files shared another way.
 
-The gaps are the problem. Sending a photo as an email attachment, through a
-messaging app configured to send "original quality", via a file-sharing link,
-or uploading to a forum or classified-ads site that stores files as-is, all
-commonly preserve everything. So does handing someone a file on a USB stick, or
-attaching it to a marketplace listing.
+The gaps are the problem, and some of them are specific enough to name.
+**Photo-sharing and cloud services generally preserve metadata rather than
+strip it** — Flickr will even display a photo's EXIF, including its location,
+as a feature, and services such as Google Photos, iCloud and Dropbox keep the
+original intact, shared links included. Email attachments preserve everything.
+
+The subtlest trap is in messaging apps: several strip metadata when you send a
+picture as a **photo**, and preserve it when you send the same file as a
+**document** or **file** — which is exactly what people do when they want to
+avoid the app's compression. Sending "original quality" has the same effect.
+Forums and classified-ads sites that store uploads as-is keep everything too,
+as does handing someone a file on a USB stick.
+
+One format note: HEIC, the default on recent iPhones, carries the same EXIF and
+GPS as JPEG. Browser-based tools cannot always decode it, so a cleaner that
+works on your JPEGs may simply refuse the photos straight off your phone.
 
 If it matters, the safe assumption is that metadata survives unless you
 removed it yourself.
@@ -72,24 +86,44 @@ There are three broad approaches, with different trade-offs.
 **Dedicated metadata tools** edit the metadata block directly, leaving the
 image data untouched. This is the cleanest result — no quality loss whatsoever
 — and lets you remove selected fields while keeping others, such as dropping
-GPS but keeping exposure settings.
+GPS but keeping exposure settings. Be aware of two things a half-hearted strip
+can leave behind: manufacturer **MakerNote** blocks, which are proprietary and
+often survive a partial clean, and the **embedded thumbnail**, which carries its
+own copy of the metadata and, notoriously, sometimes a pre-crop version of the
+picture. People have published "cropped" images whose thumbnail still showed
+what they had cropped out. A thorough tool removes both; a selective one may
+not.
 
 **Re-encoding the image** — opening it and saving a copy, or running it through
 a canvas-based browser tool — produces a new file from the pixels, and the
 metadata simply does not come along. It is effective and requires no special
-software, but it re-compresses a JPEG, which loses a little quality each time.
-For sharing on the web, that loss is usually irrelevant.
+software, but it has two costs. It re-compresses a JPEG, losing a little quality
+each time — usually irrelevant for sharing on the web. Less obviously, a browser
+canvas also discards the image's **colour profile**. A photo in a wide-gamut
+space, which includes pictures from most recent phones, can then be interpreted
+as plain sRGB and come out visibly flatter and less saturated, and browsers
+differ in how carefully they handle this. If colour fidelity matters for the
+image, strip it with a metadata editor instead.
 
 **Operating system features** exist on both major desktop platforms: Windows
 offers a "Remove Properties and Personal Information" option in a file's
 properties dialog, and macOS and iOS provide location-stripping options when
-sharing. These are convenient but limited in what they remove, and they vary by
-version.
+sharing. These are convenient, but do not rely on them for privacy. Windows'
+option is documented as leaving XMP blocks, IPTC blocks, manufacturer
+MakerNotes and the embedded thumbnail's own metadata untouched — it cleans the
+fields the Explorer properties panel knows about, which is not the same as
+cleaning the file. Behaviour also varies by version.
 
-Whichever you use, **check the result** rather than trusting the tool. Re-open
-the stripped file and look at its properties. It is common for one field to
-survive a partial strip, particularly orientation and colour-profile data,
-which are often preserved deliberately because removing them breaks display.
+Whichever you use, **check the result** rather than trusting the tool — and
+check it with something that reads the whole file. The Windows properties panel
+is the wrong instrument here, because it shows only the same curated subset it
+removes: a file can look clean there while still carrying XMP, MakerNotes and a
+thumbnail. A dedicated inspector, such as ExifTool on the command line or any
+viewer that lists every tag, tells you the truth.
+
+Expect a few fields to survive a deliberate partial strip. Orientation and
+colour-profile data are often kept on purpose, because removing them changes
+how the picture displays rather than who it identifies.
 
 ## When not to strip it
 

@@ -17,22 +17,40 @@ The ratio a manufacturer specifies is the one that supplies roughly matching
 numbers of these sites. Deviate, and the surplus component has nothing left to
 react with. It does not evaporate or eventually harden; it stays in the
 network as unreacted material, permanently. The result is the classic failed
-pour: soft or tacky patches, a surface that stays slightly sticky, reduced
-strength, and sometimes a cloudy finish. There is no rescue — it has to be
-scraped off and redone.
+pour: soft or tacky patches, reduced strength, sometimes a cloudy finish, and
+in bad cases a batch that never hardens at all. There is no rescue for a
+genuinely off-ratio pour — it has to come off and be redone. Worse, a mix can
+harden and still be defective: an off-ratio batch that feels solid can have
+lower heat resistance, chemical resistance and strength than it should, which
+matters for anything structural.
 
-Polyester and some other resins use a true catalyst, where the amount changes
-the *speed* of the reaction rather than its stoichiometry. This is why advice
-carried over from fibreglass work goes so badly wrong with epoxy. If you want a
-faster epoxy cure, you change the hardener grade or the temperature, never the
-ratio.
+**Before assuming the worst, check for amine blush.** A greasy or waxy film on
+an otherwise properly cured surface is usually not a ratio problem at all. It is
+a by-product formed when the amine hardener meets moisture and carbon dioxide in
+the air during cure, and it is especially common in cool, damp conditions. Blush
+is harmless and water-soluble: warm soapy water and an abrasive pad remove it,
+where solvents largely do not. It does have to be removed, because nothing —
+another coat of epoxy, varnish or paint — will bond properly over it. Scraping
+off a sound pour because its surface felt waxy is a genuinely expensive mistake.
+
+Polyester resins work differently, which is where the dangerous habit comes
+from. Their MEKP is usually called a catalyst, though strictly it is an
+initiator — it starts a free-radical chain reaction and is consumed doing so,
+which a true catalyst would not be. Within its specified range, the amount
+mainly changes the *speed* rather than the final network, so fibreglass workers
+learn to dose for the weather. That range still has limits in both directions:
+too little leaves a permanent undercure, too much makes the casting brittle and
+prone to cracking. Carry the habit over to epoxy, where the ratio is
+stoichiometry rather than dosage, and it fails outright. If you want a faster
+epoxy cure, change the hardener grade or the temperature, never the ratio.
 
 ## Weight and volume ratios are different numbers
 
 A ratio only means something when you know what is being measured. Resin and
 hardener usually have different densities, so the same mix expressed by volume
-and by weight gives different figures — a system that is 1:1 by volume may be
-something like 100:83 by weight.
+and by weight gives different figures — a system that is 1:1 by volume might be
+roughly 100:83 by weight. (That figure is an illustration of the size of the
+gap, not any particular product's specification: read your own data sheet.)
 
 Manufacturers publish one or both, and the two are not interchangeable. Mixing
 a weight ratio using measuring cups, or a volume ratio on a scale, is a common
@@ -63,6 +81,39 @@ Mix deliberately rather than vigorously. Whipping air into the resin creates
 bubbles you then have to remove, and heat from friction shortens your working
 time.
 
+## Your skin: the hazard most guides leave out
+
+Uncured epoxy is a sensitizer, and this is the most common way hobby use causes
+lasting harm. The distinction that matters is between irritation and allergy.
+
+According to WEST SYSTEM, one of the larger manufacturers, "fewer than 10% of
+epoxy users react when overexposed to epoxy resin or hardener", most commonly
+with contact dermatitis — skin inflammation that clears up once exposure stops.
+Fewer than 2% develop *allergic* dermatitis, and that one does not clear up.
+Their description of how it arrives is worth quoting exactly: "You may become
+sensitized to epoxy after many exposures or just one. It could take ten days of
+exposure, a month, or even years." After that, "additional (and sometimes
+increasingly severe) reactions become likely upon future exposures, even to tiny
+amounts of epoxy."
+
+There is no cure and no tolerance to build. People have had to give up the
+hobby, or the trade, over it. All of which makes the precautions
+disproportionately worth taking for how dull they are:
+
+- **Wear impermeable gloves and do not touch uncured resin or hardener.** The
+  amine hardener is the more aggressive half. Change gloves when they are
+  contaminated rather than working on in them.
+- **Never wash resin off your skin with solvent.** Acetone and similar strip
+  the skin's barrier and help the chemistry through it. Soap, water and a
+  waterless skin cleaner are the right answer.
+- **Cover up and ventilate** — long sleeves, and air movement when working with
+  any quantity, particularly in a small space.
+- **Never sand epoxy that is not fully cured.** The manufacturer's wording is
+  blunt: "Never breathe the sanding dust of partially cured epoxy. Serious
+  health problems can result." Partly cured dust is still chemically reactive,
+  and it lodges where you least want it. Let it cure fully, and use dust
+  extraction and a mask even then.
+
 ## Exotherm: the part that can actually be dangerous
 
 The curing reaction is exothermic — it releases heat. In a thin film, that heat
@@ -87,8 +138,13 @@ Three things drive it: mass, depth, and the formulation. That is why:
   adding the next.
 - **Never leave a mixed batch sitting in the cup.** A full cup of standard
   epoxy is a compact mass with nowhere to dump its heat; poured out thin, the
-  same quantity is harmless. If you must abandon a batch, spread it out rather
-  than binning it as a lump.
+  same quantity is harmless. If you must abandon a batch, spread it out on
+  something non-flammable and let it cure outdoors or somewhere ventilated.
+  Never drop a hot mass into a bin containing paper, sawdust or solvent-soaked
+  rags — that is how a runaway becomes a fire.
+- **Mind the container itself.** Don't mix large masses in glass, which can
+  shatter under the thermal shock, and be aware that thin plastic cups soften
+  and slump when a batch runs hot.
 
 Warmer ambient temperatures make all of this more energetic, and cold slows
 curing down to the point where some systems will not cure at all below their
@@ -98,8 +154,17 @@ minimum working temperature.
 
 Coverage for a flat pour is a volume calculation: area × thickness. A square
 metre at 1 mm thick is one litre, which scales conveniently — 2 mm over half a
-square metre is the same litre. For moulds, water is a reasonable proxy for
-volume if the mould is sealed and you can dry it thoroughly afterwards.
+square metre is the same litre.
+
+Epoxy is usually sold and often mixed by weight, so you will need to bridge the
+two: cured epoxy runs around 1.1 g/cm³, which puts a litre at roughly 1.1 kg.
+Ignoring that is a common way to under-buy.
+
+For moulds, water is a reasonable proxy for volume if the mould is sealed — but
+weigh the water rather than reading a jug, remember it is lighter than the resin
+that will replace it, and dry the mould *completely*. Residual moisture causes
+cloudiness and surface defects, and "thoroughly" here means bone dry, not
+towelled off.
 
 Mix a margin over the calculated figure. Resin left in the cup and on the
 stirrer is unavoidable, and running short mid-pour is worse than a little
