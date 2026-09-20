@@ -141,10 +141,10 @@ made from a correctly calculated recipe, is fine.
 ## Running the numbers
 
 Every batch needs its own calculation: the oils you actually used, their SAP
-values, your chosen superfat, and your water figure. The
-[soap lye calculator](https://soap-lye-calculator.svc.julienika.cz) on this
-site does exactly that, including the water:lye and concentration conversions
-and a per-oil SAP reference.
+values, your chosen superfat, and your water figure. This is the one
+place in soap making where doing the arithmetic by hand is a false economy: use
+a lye calculator you trust, and specifically one that lets you set superfat, lye
+purity and your water figure explicitly rather than assuming them for you.
 
 Whatever you calculate with, weigh everything — including the water — on a
 scale, and recalculate whenever the oils change. Soap making is forgiving about

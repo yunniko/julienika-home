@@ -171,12 +171,12 @@ stirrer is unavoidable, and running short mid-pour is worse than a little
 waste, because a second batch poured onto a partly gelled first one can leave a
 visible line.
 
-## Calculators
+## Getting the numbers right
 
-The [resin mix ratio calculators](https://resin-mix-ratio-calculator.svc.julienika.cz)
-on this site handle the ratio maths in both weight and volume, the coverage
-calculation for a given area and depth, and a reference of the ratios common
-brands specify.
+None of this needs software: the ratio in whichever unit your data sheet
+states, area × thickness for coverage, and about 1.1 kg per litre to convert.
+What it does need is a scale that reads in single grams and the discipline to
+use it for every batch, including the small ones.
 
 The data sheet for your specific product always wins, though. Ratios vary by
 system, and the one printed on your bottle is the one that matters.

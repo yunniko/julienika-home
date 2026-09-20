@@ -117,10 +117,10 @@ holds roughly 270 ml once fired.
 
 ## Doing the arithmetic
 
-The [clay shrinkage calculators](https://clay-shrinkage-calculator.svc.julienika.cz)
-on this site cover the three directions of this problem: working out a
-shrinkage percentage from a test bar, predicting a fired size from a wet one,
-and calculating the wet size needed to finish at a target dimension.
+Three calculations cover this problem, and each is a single division: working
+out a shrinkage percentage from a test bar, predicting a fired size from a wet
+one, and finding the wet size needed to finish at a target dimension. All three
+are written out above, and a pocket calculator handles any of them.
 
 They are only as good as the shrinkage figure you feed them, though — which
 brings it back to the test bar. Ten minutes of measuring once tells you more

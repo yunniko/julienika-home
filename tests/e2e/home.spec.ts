@@ -4,11 +4,12 @@ test("homepage leads with content and links to the guides", async ({ page }) => 
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   await expect(page.getByRole("link", { name: "Guides", exact: true }).first()).toBeVisible();
-  // Tool cards are still listed, below the content.
-  await expect(page.getByRole("link", { name: /Fraction Calculator/ })).toHaveAttribute(
+  // Tool cards are still listed, below the content — five of them since D006.
+  await expect(page.getByRole("link", { name: /Image Object Splitter/ })).toHaveAttribute(
     "href",
-    "https://fractions.svc.julienika.cz"
+    "https://image-object-splitter.svc.julienika.cz"
   );
+  await expect(page.locator('a[href*=".svc.julienika.cz"]')).toHaveCount(5);
 });
 
 test("guides index lists every guide and each one opens", async ({ page }) => {

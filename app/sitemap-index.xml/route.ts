@@ -6,31 +6,16 @@
 // point at all of them from one place; add a line here whenever a new
 // svc-lab service goes live.
 
+// Cut to the five surviving services on 2026-09-20 (D006). A sitemap index
+// pointing at decommissioned hosts is worse than useless: it asks Google to
+// crawl URLs that no longer resolve.
 const SITEMAPS = [
   "https://julienika.cz/sitemap.xml",
-  "https://fractions.svc.julienika.cz/sitemap.xml",
-  "https://yarn.svc.julienika.cz/sitemap.xml",
-  "https://sourdough.svc.julienika.cz/sitemap.xml",
-  "https://clay-shrinkage-calculator.svc.julienika.cz/sitemap.xml",
-  "https://resin-mix-ratio-calculator.svc.julienika.cz/sitemap.xml",
-  "https://ics-calendar-generator.svc.julienika.cz/sitemap.xml",
-  "https://epub-metadata-fixer.svc.julienika.cz/sitemap.xml",
   "https://image-object-splitter.svc.julienika.cz/sitemap.xml",
-  "https://pet-age-calculator.svc.julienika.cz/sitemap.xml",
-  "https://soap-lye-calculator.svc.julienika.cz/sitemap.xml",
-  "https://candle-fragrance-calculator.svc.julienika.cz/sitemap.xml",
-  "https://ad-revenue-calculator.svc.julienika.cz/sitemap.xml",
-  "https://aquarium-stocking-calculator.svc.julienika.cz/sitemap.xml",
-  "https://hydroponic-nutrient-calculator.svc.julienika.cz/sitemap.xml",
   "https://photo-metadata-cleaner.svc.julienika.cz/sitemap.xml",
-  "https://structured-data-checker.svc.julienika.cz/sitemap.xml",
   "https://ats-resume-checker.svc.julienika.cz/sitemap.xml",
-  "https://natural-dye-mordant-calculator.svc.julienika.cz/sitemap.xml",
-  "https://handmade-label-checker.svc.julienika.cz/sitemap.xml",
-  "https://care-card-generator.svc.julienika.cz/sitemap.xml",
-  "https://weaving-yardage-calculator.svc.julienika.cz/sitemap.xml",
-  "https://woodturning-blank-calculator.svc.julienika.cz/sitemap.xml",
-  "https://knife-steel-heat-treat-calculator.svc.julienika.cz/sitemap.xml",
+  "https://epub-metadata-fixer.svc.julienika.cz/sitemap.xml",
+  "https://sourdough.svc.julienika.cz/sitemap.xml",
 ];
 
 export async function GET() {

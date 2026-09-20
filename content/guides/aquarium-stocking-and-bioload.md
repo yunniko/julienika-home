@@ -142,12 +142,10 @@ that a tank is carrying more than it comfortably can.
 
 ## Estimating it
 
-The [aquarium stocking calculator](https://aquarium-stocking-calculator.svc.julienika.cz)
-on this site works through tank volume, species-aware bioload and compatibility
-rather than a flat length rule, and includes a reference chart of adult sizes
-and minimum group sizes.
-
-Treat any such estimate as a starting point for judgement, not a verdict. The
+A stocking estimate worth anything works through real tank volume, the adult
+size and waste output of each species, and compatibility — not a flat figure per
+unit of length. Whether you do that on paper or with a calculator, treat the
+result as a starting point for judgement rather than a verdict. The
 tank in front of you — its plants, its filter, its maintenance routine, and the
 particular animals in it — is the real test, and a test kit tells you more
 about your stocking level than any formula can.
