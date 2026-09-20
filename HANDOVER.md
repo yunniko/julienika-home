@@ -7,9 +7,13 @@ hub listing every live svc-lab tool. Goal: `GOALS.md` G-001. Charter: `E:\CLAUDE
 
 ## Current state
 
-- **Live** at https://julienika.cz and https://www.julienika.cz (both port 30070), content
-  rebuild deployed 2026-09-18 at a284d82 and verified: 8 URLs return 200, no other
-  container restarted, 4 other sites unaffected.
+- **Live** at https://julienika.cz and https://www.julienika.cz (both port 30070). Content
+  rebuild deployed 2026-09-18 (a284d82); hub cut to five tools 2026-09-20 (0bffae9, D006)
+  and verified live — exactly five `.svc` links on the homepage, sitemap index down to six.
+- The hub lists only the five surviving services: image-object-splitter,
+  photo-metadata-cleaner, ats-resume-checker, epub-metadata-fixer, sourdough-calculator.
+  The other 18 are decommissioned (svc-lab A017); their hostnames still resolve to 502
+  until the Owner removes those vhosts.
 - **AdSense rejected the site on 2026-09-18** for "Бесполезный контент" (low value
   content). Ownership is verified and `ads.txt` reads Authorized; the rejection is about
   the site's content, not the file. Ads stay off until a re-review passes.
@@ -64,6 +68,7 @@ svc-lab service ships — that list, not the guides, is what the daily automatio
 | 2026-09-07 | — | First deploy after the Owner removed a dead vhost (D003) | Live over HTTPS |
 | 2026-09-08 → 2026-09-17 | 3920b52 | Hub cards + sitemap index for services #6–#23 | curl of the hub and sitemap index after each ship |
 | 2026-09-18 | a284d82 | Content site: 6 guides, About/Contact/Privacy, nav, sitemap (D004); `www` vhost + cert (D005) | 8 URLs 200 incl. www; other containers' uptimes unchanged; 4 other sites 200 |
+| 2026-09-20 | 0bffae9 | Hub cut to 5 tools, sitemap index to 6, 4 guides delinked (D006) | Hub serves exactly 5 `.svc` links; sitemap index 6 entries; 5 kept services 200 |
 
 ## Decisions
 
