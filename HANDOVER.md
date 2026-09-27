@@ -2,6 +2,11 @@
 
 Last verified: 2026-09-18 at a284d82
 
+> **SUSPENDED (Owner, 2026-09-27)** — part of the svc-lab family, suspended because it did not work out as expected.
+> No new work; security upkeep only while anything of it is live. Treat its code, formulas and
+> decisions as a **lower-reliability reference**: they may or may not still work, so re-verify before
+> reusing anything. Rules: `E:\CLAUDE\COMPANY\GOALS.md` → "Suspended projects".
+
 The site for the apex domain `julienika.cz`: reference guides, the trust pages, and a
 hub listing every live svc-lab tool. Goal: `GOALS.md` G-001. Charter: `E:\CLAUDE\COMPANY\`.
 
