@@ -74,6 +74,7 @@ svc-lab service ships — that list, not the guides, is what the daily automatio
 | 2026-09-08 → 2026-09-17 | 3920b52 | Hub cards + sitemap index for services #6–#23 | curl of the hub and sitemap index after each ship |
 | 2026-09-18 | a284d82 | Content site: 6 guides, About/Contact/Privacy, nav, sitemap (D004); `www` vhost + cert (D005) | 8 URLs 200 incl. www; other containers' uptimes unchanged; 4 other sites 200 |
 | 2026-09-20 | 0bffae9 | Hub cut to 5 tools, sitemap index to 6, 4 guides delinked (D006) | Hub serves exactly 5 `.svc` links; sitemap index 6 entries; 5 kept services 200 |
+| 2026-09-27 | 9a92b89 | Security: next 16.3.1 → 16.3.6 (critical RCE advisories) | lint, unit 9/9, e2e 4/4, build; container reports 16.3.6; all 5 pages + `ads.txt` 200 in a browser; other containers untouched |
 
 ## Decisions
 
